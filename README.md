@@ -67,3 +67,9 @@ OpenAI、Claude、Google 的按钮仍位于各自的模型标题旁。
 | | |
 |-|-|
 |![](README/stcm-01.png)|![](README/stcm-02.png)|
+
+## 1.4.1: versioned entry file
+
+The manifest now loads `index-v1.4.1.js` instead of the upstream `index.js` URL. This avoids reusing a stale browser/CDN response when switching from the original repository, which uses the same extension folder name. The entry file is byte-identical to `index.js`; saved model IDs remain compatible. The extension now mounts immediately, retries after DOM/APP_READY, and remounts replaced controls. Popup loading is deferred until the editor is opened.
+
+A 1.4.x version shown in the extension manager alone is not proof that the new script executed. Verify the `Edit custom models (custom)` button beside the Custom connection model-ID heading.

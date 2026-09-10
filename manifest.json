@@ -3,9 +3,9 @@
     "loading_order": 100,
     "requires": [],
     "optional": [],
-    "js": "index.js",
+    "js": "index-v1.4.1.js",
     "css": "style.css",
     "author": "LenAnderson; luoyuewuyi (custom-compatible fork)",
-    "version": "1.4.0",
+    "version": "1.4.1",
     "homePage": "https://github.com/luoyuewuyi/SillyTavern-CustomModels"
 }
